@@ -32,7 +32,6 @@ public class Load extends Dialog {
         progressBar = (ProgressBar)findViewById(R.id.progressBar);
 
         Animation anim = AnimationUtils.loadAnimation(getContext(), R.anim.progress_anim);
-        anim.setDuration(3000);
         progressBar.startAnimation(anim);
 
     }
