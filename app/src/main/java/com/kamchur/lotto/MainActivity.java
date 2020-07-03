@@ -7,10 +7,13 @@ import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
+
+    private String TAG = "[MainActivity]";
 
     Load load;  //ProgressBar Event Motion
     Button luckyButton;
@@ -33,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
             switch (view.getId()){
                 case R.id.luckyButton:
+                    Log.d(TAG , "LuckyButton Click()");
                     mHandler.sendEmptyMessage(Constant.MESSAGE_PROGRESS);
                     break;
             }
@@ -60,11 +64,13 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void load(){
+        Log.d(TAG, "Progress Load ===>");
         load.show();
         mHandler.sendEmptyMessageDelayed(Constant.MESSAGE_REQUEST, 3000);
     }
 
     private void result(){
+        Log.d(TAG, "Lucky Number result Ready ===>");
         load.dismiss();
         mHandler.sendEmptyMessage(Constant.MESSAGE_RESULT);
     }
