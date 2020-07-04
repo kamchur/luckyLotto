@@ -1,12 +1,14 @@
 package com.kamchur.lotto;
 
 import android.annotation.SuppressLint;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -24,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     Load load;  //ProgressBar Event Motion
     Button luckyButton;
+    LinearLayout linearLayout;
 
     TextView num1;
     TextView num2;
@@ -43,6 +46,10 @@ public class MainActivity extends AppCompatActivity {
         load = new Load(MainActivity.this);
         cal =new Calculator();
 
+
+        linearLayout = (LinearLayout)findViewById(R.id.allView);
+        linearLayout.setBackgroundColor(Color.DKGRAY);
+        
         luckyButton = (Button) findViewById(R.id.luckyButton);
         luckyButton.setOnClickListener(clickListener);
 
