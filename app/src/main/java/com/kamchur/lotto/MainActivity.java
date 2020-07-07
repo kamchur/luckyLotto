@@ -35,14 +35,11 @@ public class MainActivity extends AppCompatActivity {
     TextView num5;
     TextView num6;
     TextView num7;
-<<<<<<< HEAD
     TextView testtest;
     TextView testtesttest;
-=======
     TextView mainTest;
     TextView mainTest2;
     TextView thirdTest;
->>>>>>> thirdTest
 
 
     @Override
