@@ -7,6 +7,9 @@ import java.util.List;
 import java.util.Random;
 
 public class Calculator {
+
+    private String testBranch = "test";
+
     private String TAG = "Calculator";
 
     private int[] num = {0,0,0,0,0,0,0};
