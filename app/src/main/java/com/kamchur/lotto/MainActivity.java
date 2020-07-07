@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
     TextView num7;
     TextView mainTest;
     TextView mainTest2;
+    TextView thirdTest;
 
 
     @Override
