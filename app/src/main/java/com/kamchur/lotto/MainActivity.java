@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     TextView mainTest2;
     TextView thirdTest;
 
-
+    TextView secsec;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
