@@ -19,6 +19,8 @@ public class Load extends Dialog {
 
     private ProgressBar progressBar;
 
+    private int dddd= 123;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
