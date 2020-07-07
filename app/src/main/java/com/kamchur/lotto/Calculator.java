@@ -10,6 +10,8 @@ public class Calculator {
 
     private String testBranch = "test";
 
+    private String tetsetsetset = "2222";
+
     private String TAG = "Calculator";
 
     private int[] num = {0,0,0,0,0,0,0};
